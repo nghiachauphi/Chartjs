@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bars</title>
+    <link rel="stylesheet" href="../common/style.css" />
+  </head>
+  <body style="margin: 0;">
+    <h2>Bars chart</h2>
+    <div style="height: 500px; overflow: auto;">
+      <canvas id="cv" width="1280" height="500"></canvas>
+    </div>
+
+    <h3>Data</h3>
+    <table style="width: 100%;" border>
+      <thead>
+        <tr id="table-head">
+          <th></th>
+          <th>Color</th>
+          <th>Name</th>
+          <th class="d-flex justify-center">Fields</th>
+          <th>
+            <button id="new-field">Add field</button>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody id="table-body">
+        <tr>
+          <td colspan="100%">
+            <button id="new-record" style="width: 100%; height: 100%;">Add record</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="../common/chart.min.js"></script>
+    <script src="../common/ChartWrap.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
